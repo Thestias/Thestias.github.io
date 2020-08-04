@@ -11,3 +11,7 @@
 	
 	--btnColor:#17a2b8;
 }
+
+.svg-external {
+	filter: invert(100%) sepia(2%) saturate(2099%) hue-rotate(295deg) brightness(116%) contrast(75%);
+}
