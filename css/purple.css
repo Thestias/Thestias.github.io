@@ -10,8 +10,5 @@
 	--backgroundShadow:#2b202f;
 
 	--btnColor:#8534a3;
-}
-
-.svg-external {
-	filter: invert(100%) sepia(2%) saturate(2099%) hue-rotate(295deg) brightness(116%) contrast(75%);
+	--contactImgColor: invert(100%) sepia(2%) saturate(2099%) hue-rotate(295deg) brightness(116%) contrast(75%);
 }
