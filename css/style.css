@@ -51,6 +51,17 @@ img {
     height: 50px;
 }
 
+a {
+    /* color: #435560; */
+    color: #f3d2c1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #440a67
+}
+
 .project {
     background-color: var(--darker-secondary-color);
     display: grid;
@@ -60,6 +71,11 @@ img {
     border-radius: 10px;
     font-size: 18px;
     box-shadow: var(--box-shadow);
+}
+
+.project img {
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .skills-wrapper {
