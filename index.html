@@ -1,138 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title></title>
 
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+
+    <!-- Import fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
 
-    <title>Conrado Franceschi</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
 </head>
 
 <body>
 
-    <div class="content">
 
-        <!-- Introduction -->
-        <div class="box">
-            <h1>Conrado Franceschi</h1>
-            <blockquote>
-                <p>
-                    Soy un programador autodidacta de 21 años radicado en Zárate, Buenos Aires. Actualmente estoy
-                    aprendiendo <strong>Docker</strong>, <strong>React</strong> y mejorando mi conocimiento tanto en
-                    <strong>Django</strong>
-                    como en <strong>Python</strong>.
-                </p>
-            </blockquote>
+    <nav>
+        <!-- remember, this should be a grid of three columns, one big, a small one, and another big -->
+        <div class="little-name"><a href="#">Conrado</a></div>
+        <div class="mini-container fast-nav">
+            <!-- should this change depending on which section the browser is? -->
+            <a href="#contacto">Contacto</a>
+            <div class="line"></div>
+            <img data-mode="light" id="theme-icon" src="/images/brightness.svg">
+            <div class="line"></div>
+            <a href="#proyectos">Proyectos</a>
+        </div>
+        <div class="mini-container down-resume"><a href="#">Resume</a></div>
+    </nav>
 
-            <div class="social">
-                <a target="_blank" href="https://github.com/Thestias/"><img src="images/github.svg" alt="github"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/conrado-franceschi/"><img src="images/linkedin.svg"
-                        alt="linkedin"></a>
-            </div>
+
+    <article class="introduction">
+
+        <h1>Hola, mi nombre es <b>Conrado Franceschi</b></h1>
+
+        <p>
+            Soy un programador Full-Stack autodidacta de
+            21 años, recientemente comencé a aprender
+            <span>Docker</span> y <span>React</span> mientras mejoro mi
+            conocimiento tanto en <span>Django</span> como en
+            <span>Python</span>.
+            Me considero una persona con buenas
+            habilidades para resolver problemas, una gran
+            disciplina para cumplir mis objetivos y en
+            constante capacitación. Actualmente me encuentro
+            buscando mi primera experiencia en el mundo
+            de la programación.
+
+        </p>
+
+    </article>
+
+
+    <article class="skills">
+
+        <div class="technologies-wrapper">
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Django REST Framework</li>
+                <li>HTML/CSS</li>
+            </ul>
         </div>
 
-        <!-- Skills -->
-        <div class="box">
-            <h2>Skills</h2>
-            <div class="skills-wrapper">
-                <div class="skills-list">
+        <div style="text-align: center;">
+            <img id="mountain-img" alt="mountain-img" src="images/mountain-f.svg" style="height: 32px; width: 32px;">
+        </div>
+
+        <div class="technologies-wrapper">
+            <ul>
+                <li>PostgreSQL/SQLite</li>
+                <li>Javascript</li>
+                <li>Ingles</li>
+                <li>Docker</li>
+            </ul>
+        </div>
+
+
+    </article>
+
+    <article id="proyectos" class="proyectos">
+
+        <div class="header-highlight-wrapper">
+            <h1 id="proyect-header">Proyectos</h1>
+        </div>
+
+        <div class="proyecto proyect-one">
+
+            <div class="proyect-description">
+
+                <div class="header-highlight-wrapper">
+                    <h2>Encuestas</h2>
+                </div>
+
+                <p>
+                    Este sitio permite crear y compartir
+                    encuestas de elección múltiple, uno
+                    también puede visualizar las estadísticas de
+                    las preguntas y sus respuestas.
+                </p>
+                <p>
+                    Fue hecho con <b>Django</b> como back-end,
+                    <b>HTML/CSS</b> para el front-end, <b>Javascript</b>
+                    para la creación de las encuestas y
+                    finalmente fue subido a Heroku mediante
+                    contenedores <b>Docker</b>.
+                </p>
+
+                <b><a href="https://github.com/Thestias/Survey-Website" target="blank">Codigo</a></b>
+
+            </div>
+
+
+            <div class="skills-container">
+                <h4>Tecnologías Utilizadas</h4>
+                <div class="tech">
                     <ul>
                         <li>Python</li>
                         <li>Django</li>
-                        <li>HTML5/CSS3</li>
+                        <li>HTML/CSS</li>
                     </ul>
-                </div>
-                <div class="skills-list">
                     <ul>
-                        <li><a target="_blank" href="https://www.efset.org/cert/t4keie">Ingles Certificado</a></li>
-                        <li>Javascript Basico</li>
-                        <li>PostgreSQL/SQLite</li>
+                        <li>SQLite</li>
                     </ul>
                 </div>
             </div>
+
+            <img src="https://i.imgur.com/UMNagzp.png">
         </div>
 
-        <div class="box">
-            <!-- Proyectos -->
-            <h2>Projectos</h2>
-            <div class="project">
-                <img src="https://i.imgur.com/UMNagzp.png">
-                <div class="description">
-                    <p>
-                        Este sitio permite crear y compartir encuestas de eleccion multiple, tambien permite visualizar
-                        sus respuestas.<br>
-                        <a target="_blank" href="https://surveyw.herokuapp.com/">Live version</a> • <a target="_blank"
-                            href="https://github.com/Thestias/Survey-Website">Codigo</a>
-
-                    </p>
-                    <p><strong>Tecnologias utilizadas</strong></p>
-                    <div class="proyect-skills">
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>TailwindCSS</li>
-                        </ul>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>SQLite</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="https://i.imgur.com/1NFzsb8.png">
-                <div class="description">
-                    <p>
-                        Cada vez que uno entra a este sitio se le muestra una pelicula(y sus detalles) al azar. Uno
-                        puede crear un usuario y añadir peliculas a favoritos.
-                        <a target="_blank" href="https://github.com/Thestias/Random-Movie-Website">Codigo</a>
-                    </p>
-                    <p><strong>Tecnologias utilizadas</strong></p>
-                    <div class="proyect-skills">
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                        </ul>
-                        <ul>
-                            <li>Django Rest Framework</li>
-                            <li>SQLite</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="https://i.imgur.com/hOZOI4k.png">
-                <div class="description">
-                    <p>
-                        Un simple blog que utiliza Markdown, permite añadir categorias, buscar y a cualquier persona
-                        subir blogs!<br>
-                        <a target="_blank" href="https://github.com/Thestias/Minimal-Blog">Codigo</a>
-                    </p>
-                    <p><strong>Tecnologias utilizadas</strong></p>
-                    <div class="proyect-skills">
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                        </ul>
-                        <ul>
-                            <li>SQLite</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="proyect-sep-wrapper">
+            <div class="circle"></div>
+            <div class="sext"></div>
+            <div class="square"></div>
         </div>
 
-        <!-- Contacto -->
-        <div class="box">
-            <h2>Contacto</h2>
+        <div class="proyecto proyect-two">
+
+            <div class="proyect-description">
+
+                <div class="header-highlight-wrapper">
+                    <h2>Peliculas al Azar</h2>
+                </div>
+
+                <p>
+                    Cada vez que uno entra a este sitio el
+                    mismo le muestra al usuario una pelicula al
+                    azar, que uno puede añadir a favoritos.
+                </p>
+
+                <p>
+                    Fue hecho con <b>Django</b>, <b>SQLite</b> para la
+                    base de datos, <b>HTML/CSS</b> para el front-
+                    end y posee una API REST hecha con
+                    <b>Django REST Framework</b>
+                </p>
+
+                <b><a href="https://github.com/Thestias/Random-Movie-Website" target="blank">Codigo</a></b>
+
+            </div>
+
+            <div class="skills-container">
+                <h4>Tecnologías Utilizadas</h4>
+                <div class="tech">
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                    <ul>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="https://i.imgur.com/1NFzsb8.png">
+
+        </div>
+
+        <div class="proyect-sep-wrapper">
+            <div class="circle"></div>
+            <div class="sext"></div>
+            <div class="square"></div>
+        </div>
+
+        <div class="proyecto proyect-three">
+
+            <div class="proyect-description">
+
+                <div class="header-highlight-wrapper">
+                    <h2>Minimal Blog</h2>
+                </div>
+
+                <p>
+                    Este sitio es un simple blog que se maneja en archivos Markdown para representar a los blogs.
+                </p>
+                <p>
+                    Esta hecho con <b>Django</b> y <b>HTML/CSS</b>
+                </p>
+
+                <b><a href="https://github.com/Thestias/Minimal-Blog" target="blank">Codigo</a></b>
+
+            </div>
+
+
+            <div class="skills-container">
+                <h4>Tecnologías Utilizadas</h4>
+                <div class="tech">
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                    <ul>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="https://i.imgur.com/hOZOI4k.png">
+        </div>
+
+
+    </article>
+
+
+    <article id="contacto" class="contacto">
+
+        <div class="contact-wrapper">
+            <div class="header-highlight-wrapper">
+                <h2>Contacto</h2>
+            </div>
+
             <div class="contact-form">
                 <form action="https://formspree.io/mrgyjaeq" method="POST">
 
@@ -150,7 +259,8 @@
             </div>
         </div>
 
-    </div>
+    </article>
+
 
 </body>
 
