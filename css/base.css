@@ -28,7 +28,7 @@ NAVIGATION BAR
 	background-color: var(--backgroundBW);
 }
 
-#theme-icon { transition: 0.5s; }
+#theme-icon { transition: 0.5s; cursor:pointer}
 #theme-icon:hover { 
 	transform: rotate(180deg); 
 }
