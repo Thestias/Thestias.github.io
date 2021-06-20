@@ -28,7 +28,7 @@ NAVIGATION BAR
 	background-color: var(--backgroundBW);
 }
 
-#theme-icon { transition: 0.5s; cursor:pointer}
+#theme-icon { transition: 0.5s; cursor: pointer;}
 #theme-icon:hover { 
 	transform: rotate(180deg); 
 }
@@ -172,7 +172,15 @@ SKILLS
 	color: var(--backgroundBW);
 	shape-outside: polygon(0 1%, 100% 12%, 100% 98%, 0% 100%);
 	clip-path: polygon(0 1%, 100% 12%, 100% 98%, 0% 100%);
+}
 
+.skills h2 { 
+	color: var(--rough-headers);
+	text-align: center; 
+	font-size: calc(25px + 0.5vw)
+}
+
+.skills-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 10% 1fr;
 	align-items: center;

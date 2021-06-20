@@ -8,11 +8,12 @@ window.onload = function () {
 
       const proyect_names = document.querySelectorAll('.proyectos h2')
       const contact = annotate(document.querySelector('#contacto h2'), { type: 'highlight', color: '#FFD54F' })
+      const skills = annotate(document.querySelector('.skills h2'), { type: 'highlight', color: '#FFD54F' })
       const a2 = annotate(proyect_names[0], { type: 'highlight', color: '#b8c1ec' });
       const a3 = annotate(proyect_names[1], { type: 'highlight', color: '#eebbc3' });
       const a4 = annotate(proyect_names[2], { type: 'highlight', color: '#c3f0ca' });
 
-      let welp = annotationGroup([a1, contact, a2, a3, a4])
+      let welp = annotationGroup([skills, a1, a2, a3, a4, contact])
       welp.show()
       return welp
    }
@@ -23,11 +24,12 @@ window.onload = function () {
       const proyect_names = document.querySelectorAll('.proyectos h2')
       const conf = { type: 'highlight', color: '#dacec8' }
       const contact = annotate(document.querySelector('#contacto h2'), conf)
+      const skills = annotate(document.querySelector('.skills h2'), { type: 'highlight', color: '#FFD54F' })
       const a2 = annotate(proyect_names[0], conf);
       const a3 = annotate(proyect_names[1], conf);
       const a4 = annotate(proyect_names[2], conf);
 
-      let welp = annotationGroup([a1, contact, a2, a3, a4])
+      let welp = annotationGroup([skills, a1, a2, a3, a4, contact])
       welp.show()
       return welp
    }
@@ -78,11 +80,11 @@ window.onload = function () {
 
    function setTheme(mode) {
       if (mode == 'light') {
-         document.getElementById('theme-style').href = 'css/light.css'
+         document.getElementById('theme-style').href = 'light.css'
       }
 
       if (mode == 'dark') {
-         document.getElementById('theme-style').href = 'css/dark.css'
+         document.getElementById('theme-style').href = 'dark.css'
       }
       localStorage.setItem('theme', mode)
    }
