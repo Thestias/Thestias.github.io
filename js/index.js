@@ -24,7 +24,7 @@ window.onload = function () {
       const proyect_names = document.querySelectorAll('.proyectos h2')
       const conf = { type: 'highlight', color: '#dacec8' }
       const contact = annotate(document.querySelector('#contacto h2'), conf)
-      const skills = annotate(document.querySelector('.skills h2'), { type: 'highlight', color: '#FFD54F' })
+      const skills = annotate(document.querySelector('.skills h2'), conf)
       const a2 = annotate(proyect_names[0], conf);
       const a3 = annotate(proyect_names[1], conf);
       const a4 = annotate(proyect_names[2], conf);
@@ -80,11 +80,11 @@ window.onload = function () {
 
    function setTheme(mode) {
       if (mode == 'light') {
-         document.getElementById('theme-style').href = 'light.css'
+         document.getElementById('theme-style').href = 'css/light.css'
       }
 
       if (mode == 'dark') {
-         document.getElementById('theme-style').href = 'dark.css'
+         document.getElementById('theme-style').href = 'css/dark.css'
       }
       localStorage.setItem('theme', mode)
    }
