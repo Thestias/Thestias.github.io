@@ -5,3 +5,13 @@
 	--backgroundBW: black; /* For the DIVS that are only for decoration */
 	--nav-big-name: #0d0d0d;
 }
+
+/* 	
+
+TRANSITIONS
+
+*/
+
+body, article, div, p, h1, h2, h3 {
+	transition: background-color 0.2s ease;
+}
